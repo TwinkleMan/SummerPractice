@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>BehavioralPatterns.Command</OriginalElement>
+  <nodes>
+    <node x="185.00000000000003" y="227.0">BehavioralPatterns.Command.SellStock</node>
+    <node x="230.51302083333337" y="392.0">BehavioralPatterns.Command.CommandDemo</node>
+    <node x="341.0" y="227.0">BehavioralPatterns.Command.BuyStock</node>
+    <node x="351.99218750000006" y="0.0">BehavioralPatterns.Command.Stock</node>
+    <node x="0.0" y="216.0">BehavioralPatterns.Command.Broker</node>
+    <node x="69.39583333333337" y="45.0">BehavioralPatterns.Command.Order</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="BehavioralPatterns.Command.BuyStock" target="BehavioralPatterns.Command.Order" relationship="REALIZATION">
+      <point x="-46.0" y="-51.0" />
+      <point x="364.0" y="196.0" />
+      <point x="225.3333333333334" y="196.0" />
+      <point x="225.3333333333334" y="186.0" />
+      <point x="172.7291666666667" y="186.0" />
+      <point x="41.33333333333334" y="28.0" />
+    </edge>
+    <edge source="BehavioralPatterns.Command.CommandDemo" target="BehavioralPatterns.Command.BuyStock" relationship="CREATE">
+      <point x="20.25" y="-39.5" />
+      <point x="331.76302083333337" y="361.0" />
+      <point x="410.0" y="361.0" />
+      <point x="0.0" y="51.0" />
+    </edge>
+    <edge source="BehavioralPatterns.Command.Broker" target="BehavioralPatterns.Command.Order" relationship="TO_MANY">
+      <point x="0.0" y="-62.0" />
+      <point x="82.5" y="196.0" />
+      <point x="71.02083333333337" y="196.0" />
+      <point x="71.02083333333337" y="186.0" />
+      <point x="90.06250000000003" y="186.0" />
+      <point x="-41.33333333333334" y="28.0" />
+    </edge>
+    <edge source="BehavioralPatterns.Command.SellStock" target="BehavioralPatterns.Command.Stock" relationship="TO_ONE">
+      <point x="2.8421709430404007E-14" y="-51.0" />
+      <point x="253.00000000000006" y="186.0" />
+      <point x="311.51302083333337" y="186.0" />
+      <point x="311.51302083333337" y="166.0" />
+      <point x="380.24218750000006" y="166.0" />
+      <point x="-28.25" y="73.0" />
+    </edge>
+    <edge source="BehavioralPatterns.Command.BuyStock" target="BehavioralPatterns.Command.Stock" relationship="TO_ONE">
+      <point x="0.0" y="-51.0" />
+      <point x="410.0" y="186.0" />
+      <point x="311.51302083333337" y="186.0" />
+      <point x="311.51302083333337" y="166.0" />
+      <point x="380.24218750000006" y="166.0" />
+      <point x="-28.25" y="73.0" />
+    </edge>
+    <edge source="BehavioralPatterns.Command.CommandDemo" target="BehavioralPatterns.Command.Broker" relationship="CREATE">
+      <point x="-60.75" y="-39.5" />
+      <point x="250.76302083333337" y="371.0" />
+      <point x="82.5" y="371.0" />
+      <point x="0.0" y="62.0" />
+    </edge>
+    <edge source="BehavioralPatterns.Command.CommandDemo" target="BehavioralPatterns.Command.Stock" relationship="CREATE">
+      <point x="60.75" y="-39.5" />
+      <point x="372.26302083333337" y="371.0" />
+      <point x="489.5" y="371.0" />
+      <point x="489.5" y="176.0" />
+      <point x="438.0" y="176.0" />
+      <point x="438.0" y="166.0" />
+      <point x="436.74218750000006" y="166.0" />
+      <point x="28.25" y="73.0" />
+    </edge>
+    <edge source="BehavioralPatterns.Command.BuyStock" target="BehavioralPatterns.Command.Stock" relationship="DEPENDENCY">
+      <point x="46.0" y="-51.0" />
+      <point x="456.0" y="176.0" />
+      <point x="438.0" y="176.0" />
+      <point x="438.0" y="166.0" />
+      <point x="436.74218750000006" y="166.0" />
+      <point x="28.25" y="73.0" />
+    </edge>
+    <edge source="BehavioralPatterns.Command.SellStock" target="BehavioralPatterns.Command.Order" relationship="REALIZATION">
+      <point x="-45.333333333333314" y="-51.0" />
+      <point x="207.6666666666667" y="196.0" />
+      <point x="225.3333333333334" y="196.0" />
+      <point x="225.3333333333334" y="186.0" />
+      <point x="172.7291666666667" y="186.0" />
+      <point x="41.33333333333334" y="28.0" />
+    </edge>
+    <edge source="BehavioralPatterns.Command.CommandDemo" target="BehavioralPatterns.Command.SellStock" relationship="CREATE">
+      <point x="-20.25" y="-39.5" />
+      <point x="291.26302083333337" y="361.0" />
+      <point x="253.00000000000003" y="361.0" />
+      <point x="0.0" y="51.0" />
+    </edge>
+    <edge source="BehavioralPatterns.Command.SellStock" target="BehavioralPatterns.Command.Stock" relationship="DEPENDENCY">
+      <point x="45.33333333333334" y="-51.0" />
+      <point x="298.33333333333337" y="176.0" />
+      <point x="438.0" y="176.0" />
+      <point x="438.0" y="166.0" />
+      <point x="436.74218750000006" y="166.0" />
+      <point x="28.25" y="73.0" />
+    </edge>
+    <edge source="BehavioralPatterns.Command.Broker" target="BehavioralPatterns.Command.Order" relationship="TO_ONE">
+      <point x="-55.0" y="-62.0" />
+      <point x="27.5" y="196.0" />
+      <point x="71.02083333333337" y="196.0" />
+      <point x="71.02083333333337" y="186.0" />
+      <point x="90.06250000000003" y="186.0" />
+      <point x="-41.33333333333334" y="28.0" />
+    </edge>
+    <edge source="BehavioralPatterns.Command.Broker" target="BehavioralPatterns.Command.Order" relationship="DEPENDENCY">
+      <point x="55.0" y="-62.0" />
+      <point x="137.5" y="196.0" />
+      <point x="131.39583333333337" y="196.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.15" showDependencies="true" x="261.49999999999994" y="235.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

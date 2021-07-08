@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>StructuralPatterns.Adapter</OriginalElement>
+  <nodes>
+    <node x="0.0" y="128.0">StructuralPatterns.Adapter.Mp4Player</node>
+    <node x="139.51315789473688" y="281.0">StructuralPatterns.Adapter.MediaAdapter</node>
+    <node x="235.75" y="587.0">StructuralPatterns.Adapter.AdapterDemo</node>
+    <node x="371.75" y="150.5">StructuralPatterns.Adapter.MediaPlayer</node>
+    <node x="209.25" y="435.0">StructuralPatterns.Adapter.AudioPlayer</node>
+    <node x="180.0" y="128.0">StructuralPatterns.Adapter.VlcPlayer</node>
+    <node x="126.875" y="0.0">StructuralPatterns.Adapter.AdvancedMediaPlayer</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="StructuralPatterns.Adapter.AudioPlayer" target="StructuralPatterns.Adapter.MediaAdapter" relationship="CREATE">
+      <point x="0.0" y="-51.0" />
+      <point x="310.25" y="409.0" />
+      <point x="353.2631578947369" y="409.0" />
+      <point x="71.25" y="51.0" />
+    </edge>
+    <edge source="StructuralPatterns.Adapter.MediaAdapter" target="StructuralPatterns.Adapter.VlcPlayer" relationship="CREATE">
+      <point x="-35.625" y="-51.0" />
+      <point x="246.38815789473688" y="255.0" />
+      <point x="260.0" y="255.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="StructuralPatterns.Adapter.MediaAdapter" target="StructuralPatterns.Adapter.AdvancedMediaPlayer" relationship="TO_ONE">
+      <point x="35.625" y="-51.0" />
+      <point x="317.6381578947369" y="255.0" />
+      <point x="350.5" y="255.0" />
+      <point x="350.5" y="108.0" />
+      <point x="276.875" y="108.0" />
+      <point x="50.0" y="39.0" />
+    </edge>
+    <edge source="StructuralPatterns.Adapter.MediaAdapter" target="StructuralPatterns.Adapter.Mp4Player" relationship="CREATE">
+      <point x="-106.875" y="-51.0" />
+      <point x="175.13815789473688" y="255.0" />
+      <point x="80.0" y="255.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="StructuralPatterns.Adapter.AudioPlayer" target="StructuralPatterns.Adapter.MediaAdapter" relationship="TO_ONE">
+      <point x="-67.33333333333331" y="-51.0" />
+      <point x="242.91666666666669" y="409.0" />
+      <point x="210.76315789473688" y="409.0" />
+      <point x="-71.25" y="51.0" />
+    </edge>
+    <edge source="StructuralPatterns.Adapter.AdapterDemo" target="StructuralPatterns.Adapter.AudioPlayer" relationship="CREATE">
+      <point x="0.0" y="-39.5" />
+      <point x="0.0" y="51.0" />
+    </edge>
+    <edge source="StructuralPatterns.Adapter.Mp4Player" target="StructuralPatterns.Adapter.AdvancedMediaPlayer" relationship="REALIZATION">
+      <point x="0.0" y="-50.5" />
+      <point x="80.0" y="108.0" />
+      <point x="181.625" y="108.0" />
+      <point x="181.625" y="98.0" />
+      <point x="176.875" y="98.0" />
+      <point x="-50.0" y="39.0" />
+    </edge>
+    <edge source="StructuralPatterns.Adapter.MediaAdapter" target="StructuralPatterns.Adapter.MediaPlayer" relationship="REALIZATION">
+      <point x="106.875" y="-51.0" />
+      <point x="388.8881578947369" y="255.0" />
+      <point x="458.25" y="255.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="StructuralPatterns.Adapter.AudioPlayer" target="StructuralPatterns.Adapter.MediaPlayer" relationship="REALIZATION">
+      <point x="67.33333333333331" y="-51.0" />
+      <point x="377.5833333333333" y="409.0" />
+      <point x="458.25" y="409.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="StructuralPatterns.Adapter.VlcPlayer" target="StructuralPatterns.Adapter.AdvancedMediaPlayer" relationship="REALIZATION">
+      <point x="0.0" y="-50.5" />
+      <point x="260.0" y="108.0" />
+      <point x="181.625" y="108.0" />
+      <point x="181.625" y="98.0" />
+      <point x="176.875" y="98.0" />
+      <point x="-50.0" y="39.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.15" showDependencies="true" x="272.0" y="333.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

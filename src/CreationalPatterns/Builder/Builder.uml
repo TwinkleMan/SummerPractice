@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>CreationalPatterns.Builder</OriginalElement>
+  <nodes>
+    <node x="83.60526315789474" y="465.0">CreationalPatterns.Builder.ChickenBurger</node>
+    <node x="0.0" y="116.5">CreationalPatterns.Builder.Wrapper</node>
+    <node x="597.188596491228" y="106.0">CreationalPatterns.Builder.Item</node>
+    <node x="549.8157894736842" y="771.0">CreationalPatterns.Builder.BuilderDemo</node>
+    <node x="637.8552631578948" y="268.0">CreationalPatterns.Builder.Meal</node>
+    <node x="250.6052631578947" y="465.0">CreationalPatterns.Builder.VegBurger</node>
+    <node x="468.5657894736842" y="291.0">CreationalPatterns.Builder.ColdDrink</node>
+    <node x="376.26973684210526" y="618.0">CreationalPatterns.Builder.MealBuilder</node>
+    <node x="392.6052631578947" y="465.0">CreationalPatterns.Builder.Pepsi</node>
+    <node x="533.6052631578947" y="465.0">CreationalPatterns.Builder.Coke</node>
+    <node x="136.0" y="116.5">CreationalPatterns.Builder.Bottle</node>
+    <node x="308.6513157894737" y="0.0">CreationalPatterns.Builder.Packing</node>
+    <node x="179.31578947368416" y="291.0">CreationalPatterns.Builder.Burger</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="CreationalPatterns.Builder.ChickenBurger" target="CreationalPatterns.Builder.Burger" relationship="GENERALIZATION">
+      <point x="-2.631578947500657E-4" y="-50.5" />
+      <point x="157.105" y="429.0" />
+      <point x="251.316" y="429.0" />
+      <point x="2.1052631583984294E-4" y="50.5" />
+    </edge>
+    <edge source="CreationalPatterns.Builder.BuilderDemo" target="CreationalPatterns.Builder.Meal" relationship="DEPENDENCY">
+      <point x="2.1052631586826465E-4" y="-39.5" />
+      <point x="624.316" y="745.0" />
+      <point x="713.355" y="745.0" />
+      <point x="-2.631578947784874E-4" y="73.5" />
+    </edge>
+    <edge source="CreationalPatterns.Builder.Item" target="CreationalPatterns.Builder.Packing" relationship="DEPENDENCY">
+      <point x="-71.99959649122809" y="0.0" />
+      <point x="447.0" y="156.0" />
+      <point x="447.0" y="28.0" />
+      <point x="57.99968421052631" y="0.0" />
+    </edge>
+    <edge source="CreationalPatterns.Builder.Meal" target="CreationalPatterns.Builder.Item" relationship="TO_MANY">
+      <point x="-2.631578947784874E-4" y="-73.5" />
+      <point x="713.355" y="236.0" />
+      <point x="669.189" y="236.0" />
+      <point x="4.035087719103103E-4" y="50.0" />
+    </edge>
+    <edge source="CreationalPatterns.Builder.MealBuilder" target="CreationalPatterns.Builder.Meal" relationship="CREATE">
+      <point x="2.6315789472164397E-4" y="50.5" />
+      <point x="473.77" y="745.0" />
+      <point x="713.355" y="745.0" />
+      <point x="-2.631578947784874E-4" y="73.5" />
+    </edge>
+    <edge source="CreationalPatterns.Builder.MealBuilder" target="CreationalPatterns.Builder.Pepsi" relationship="CREATE">
+      <point x="-20.664473684210577" y="-50.5" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="CreationalPatterns.Builder.Burger" target="CreationalPatterns.Builder.Wrapper" relationship="CREATE">
+      <point x="-72.0" y="0.0" />
+      <point x="58.0" y="341.5" />
+      <point x="0.0" y="39.5" />
+    </edge>
+    <edge source="CreationalPatterns.Builder.Meal" target="CreationalPatterns.Builder.Item" relationship="TO_ONE">
+      <point x="-2.631578947784874E-4" y="-73.5" />
+      <point x="713.355" y="236.0" />
+      <point x="669.189" y="236.0" />
+      <point x="4.035087719103103E-4" y="50.0" />
+    </edge>
+    <edge source="CreationalPatterns.Builder.MealBuilder" target="CreationalPatterns.Builder.VegBurger" relationship="CREATE">
+      <point x="-97.5" y="-15.0" />
+      <point x="311.6052631578947" y="653.5" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="CreationalPatterns.Builder.Meal" target="CreationalPatterns.Builder.Item" relationship="DEPENDENCY">
+      <point x="-59.16626315789483" y="-73.5" />
+      <point x="-14.99959649122809" y="50.0" />
+    </edge>
+    <edge source="CreationalPatterns.Builder.Burger" target="CreationalPatterns.Builder.Item" relationship="REALIZATION">
+      <point x="2.1052631583984294E-4" y="-50.5" />
+      <point x="251.316" y="265.0" />
+      <point x="614.5" y="265.0" />
+      <point x="-54.688596491228054" y="50.0" />
+    </edge>
+    <edge source="CreationalPatterns.Builder.Pepsi" target="CreationalPatterns.Builder.ColdDrink" relationship="GENERALIZATION">
+      <point x="-2.6315789466480055E-4" y="-50.5" />
+      <point x="453.105" y="440.0" />
+      <point x="540.566" y="440.0" />
+      <point x="2.1052631586826465E-4" y="50.5" />
+    </edge>
+    <edge source="CreationalPatterns.Builder.Burger" target="CreationalPatterns.Builder.Packing" relationship="DEPENDENCY">
+      <point x="72.00021052631581" y="0.0" />
+      <point x="447.0" y="341.5" />
+      <point x="447.0" y="28.0" />
+      <point x="57.99968421052631" y="0.0" />
+    </edge>
+    <edge source="CreationalPatterns.Builder.BuilderDemo" target="CreationalPatterns.Builder.MealBuilder" relationship="CREATE">
+      <point x="-74.5" y="0.0" />
+      <point x="458.77" y="810.5" />
+      <point x="-14.999736842105278" y="50.5" />
+    </edge>
+    <edge source="CreationalPatterns.Builder.ColdDrink" target="CreationalPatterns.Builder.Packing" relationship="DEPENDENCY">
+      <point x="-71.99978947368419" y="0.0" />
+      <point x="447.0" y="341.5" />
+      <point x="447.0" y="28.0" />
+      <point x="57.99968421052631" y="0.0" />
+    </edge>
+    <edge source="CreationalPatterns.Builder.VegBurger" target="CreationalPatterns.Builder.Burger" relationship="GENERALIZATION">
+      <point x="-2.6315789466480055E-4" y="-50.5" />
+      <point x="311.605" y="429.0" />
+      <point x="251.316" y="429.0" />
+      <point x="2.1052631583984294E-4" y="50.5" />
+    </edge>
+    <edge source="CreationalPatterns.Builder.Coke" target="CreationalPatterns.Builder.ColdDrink" relationship="GENERALIZATION">
+      <point x="-2.6315789466480055E-4" y="-50.5" />
+      <point x="594.105" y="440.0" />
+      <point x="540.566" y="440.0" />
+      <point x="2.1052631586826465E-4" y="50.5" />
+    </edge>
+    <edge source="CreationalPatterns.Builder.MealBuilder" target="CreationalPatterns.Builder.ChickenBurger" relationship="CREATE">
+      <point x="-97.5" y="0.0" />
+      <point x="157.10526315789474" y="668.5" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="CreationalPatterns.Builder.MealBuilder" target="CreationalPatterns.Builder.Coke" relationship="CREATE">
+      <point x="89.99999999999994" y="-50.5" />
+      <point x="-30.33552631578948" y="50.5" />
+    </edge>
+    <edge source="CreationalPatterns.Builder.Wrapper" target="CreationalPatterns.Builder.Packing" relationship="REALIZATION">
+      <point x="0.0" y="-39.5" />
+      <point x="58.0" y="97.5" />
+      <point x="281.0" y="97.5" />
+      <point x="281.0" y="28.0" />
+      <point x="-58.00031578947369" y="0.0" />
+    </edge>
+    <edge source="CreationalPatterns.Builder.ColdDrink" target="CreationalPatterns.Builder.Bottle" relationship="CREATE">
+      <point x="-14.999789473684132" y="-50.5" />
+      <point x="525.566" y="171.0" />
+      <point x="58.0" y="15.0" />
+    </edge>
+    <edge source="CreationalPatterns.Builder.Bottle" target="CreationalPatterns.Builder.Packing" relationship="REALIZATION">
+      <point x="58.0" y="0.0" />
+      <point x="281.0" y="156.0" />
+      <point x="281.0" y="28.0" />
+      <point x="-58.00031578947369" y="0.0" />
+    </edge>
+    <edge source="CreationalPatterns.Builder.ColdDrink" target="CreationalPatterns.Builder.Item" relationship="REALIZATION">
+      <point x="2.1052631586826465E-4" y="-50.5" />
+      <point x="540.566" y="265.0" />
+      <point x="614.5" y="265.0" />
+      <point x="-54.688596491228054" y="50.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="394.5" y="425.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

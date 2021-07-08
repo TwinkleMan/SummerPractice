@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>StructuralPatterns.Bridge</OriginalElement>
+  <nodes>
+    <node x="79.50000000000003" y="106.0">StructuralPatterns.Bridge.Shape</node>
+    <node x="0.0" y="260.0">StructuralPatterns.Bridge.Circle</node>
+    <node x="240.50000000000006" y="117.5">StructuralPatterns.Bridge.RedCircle</node>
+    <node x="453.50000000000006" y="117.5">StructuralPatterns.Bridge.GreenCircle</node>
+    <node x="204.04166666666669" y="458.0">StructuralPatterns.Bridge.BridgeDemo</node>
+    <node x="89.17803030303034" y="0.0">StructuralPatterns.Bridge.DrawAPI</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="StructuralPatterns.Bridge.Shape" target="StructuralPatterns.Bridge.DrawAPI" relationship="TO_ONE">
+      <point x="35.67803030303031" y="-51.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="StructuralPatterns.Bridge.Circle" target="StructuralPatterns.Bridge.Shape" relationship="GENERALIZATION">
+      <point x="67.5" y="-73.0" />
+      <point x="14.999999999999972" y="51.0" />
+    </edge>
+    <edge source="StructuralPatterns.Bridge.Shape" target="StructuralPatterns.Bridge.DrawAPI" relationship="DEPENDENCY">
+      <point x="-2.8421709430404007E-14" y="51.0" />
+      <point x="150.0" y="234.0" />
+      <point x="62.0" y="234.0" />
+      <point x="62.0" y="28.0" />
+      <point x="-96.50003030303034" y="0.0" />
+    </edge>
+    <edge source="StructuralPatterns.Bridge.Circle" target="StructuralPatterns.Bridge.DrawAPI" relationship="DEPENDENCY">
+      <point x="0.0" y="-73.0" />
+      <point x="97.5" y="234.0" />
+      <point x="62.0" y="234.0" />
+      <point x="62.0" y="28.0" />
+      <point x="-96.50003030303034" y="0.0" />
+    </edge>
+    <edge source="StructuralPatterns.Bridge.RedCircle" target="StructuralPatterns.Bridge.DrawAPI" relationship="REALIZATION">
+      <point x="-5.6843418860808015E-14" y="-39.5" />
+      <point x="337.0" y="97.0" />
+      <point x="243.5" y="97.0" />
+      <point x="57.82196969696966" y="28.0" />
+    </edge>
+    <edge source="StructuralPatterns.Bridge.BridgeDemo" target="StructuralPatterns.Bridge.Shape" relationship="DEPENDENCY">
+      <point x="-66.04166666666669" y="-39.5" />
+      <point x="62.49999999999997" y="51.0" />
+    </edge>
+    <edge source="StructuralPatterns.Bridge.BridgeDemo" target="StructuralPatterns.Bridge.RedCircle" relationship="CREATE">
+      <point x="58.45833333333337" y="-39.5" />
+      <point x="0.0" y="39.5" />
+    </edge>
+    <edge source="StructuralPatterns.Bridge.BridgeDemo" target="StructuralPatterns.Bridge.GreenCircle" relationship="CREATE">
+      <point x="74.5" y="0.0" />
+      <point x="550.0" y="497.5" />
+      <point x="0.0" y="39.5" />
+    </edge>
+    <edge source="StructuralPatterns.Bridge.GreenCircle" target="StructuralPatterns.Bridge.DrawAPI" relationship="REALIZATION">
+      <point x="0.0" y="-39.5" />
+      <point x="550.0" y="97.0" />
+      <point x="243.5" y="97.0" />
+      <point x="57.82196969696966" y="28.0" />
+    </edge>
+    <edge source="StructuralPatterns.Bridge.BridgeDemo" target="StructuralPatterns.Bridge.Circle" relationship="CREATE">
+      <point x="-74.5" y="0.0" />
+      <point x="97.5" y="497.5" />
+      <point x="0.0" y="73.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="323.5" y="268.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
