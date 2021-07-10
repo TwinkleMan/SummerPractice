@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>StructuralPatterns.AltBridge</OriginalElement>
+  <nodes>
+    <node x="457.89351851851853" y="158.0">StructuralPatterns.AltBridge.Weapon</node>
+    <node x="229.0" y="158.0">StructuralPatterns.AltBridge.FlyingEnchantment</node>
+    <node x="336.054012345679" y="0.0">StructuralPatterns.AltBridge.Enchantment</node>
+    <node x="367.3641975308642" y="331.0">StructuralPatterns.AltBridge.Sword</node>
+    <node x="317.89351851851853" y="527.0">StructuralPatterns.AltBridge.AltBridgeTest</node>
+    <node x="581.8641975308642" y="331.0">StructuralPatterns.AltBridge.Hammer</node>
+    <node x="0.0" y="158.0">StructuralPatterns.AltBridge.SoulEatingEnchantment</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="StructuralPatterns.AltBridge.Sword" target="StructuralPatterns.AltBridge.Weapon" relationship="REALIZATION">
+      <point x="-23.364197530864203" y="-72.0" />
+      <point x="441.0" y="218.5" />
+      <point x="-96.99951851851847" y="0.0" />
+    </edge>
+    <edge source="StructuralPatterns.AltBridge.AltBridgeTest" target="StructuralPatterns.AltBridge.SoulEatingEnchantment" relationship="CREATE">
+      <point x="-74.5" y="0.0" />
+      <point x="104.5" y="565.5" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="StructuralPatterns.AltBridge.AltBridgeTest" target="StructuralPatterns.AltBridge.FlyingEnchantment" relationship="CREATE">
+      <point x="-67.0" y="-38.5" />
+      <point x="7.893518518518533" y="60.5" />
+    </edge>
+    <edge source="StructuralPatterns.AltBridge.Hammer" target="StructuralPatterns.AltBridge.Weapon" relationship="REALIZATION">
+      <point x="14.99980246913583" y="-72.0" />
+      <point x="693.864" y="140.5" />
+      <point x="441.0" y="140.5" />
+      <point x="441.0" y="218.5" />
+      <point x="-96.99951851851847" y="0.0" />
+    </edge>
+    <edge source="StructuralPatterns.AltBridge.FlyingEnchantment" target="StructuralPatterns.AltBridge.Enchantment" relationship="REALIZATION">
+      <point x="0.0" y="-60.5" />
+      <point x="317.5" y="128.0" />
+      <point x="408.5" y="128.0" />
+      <point x="-3.5540123456789843" y="49.0" />
+    </edge>
+    <edge source="StructuralPatterns.AltBridge.SoulEatingEnchantment" target="StructuralPatterns.AltBridge.Enchantment" relationship="REALIZATION">
+      <point x="0.0" y="-60.5" />
+      <point x="104.5" y="128.0" />
+      <point x="408.5" y="128.0" />
+      <point x="-3.5540123456789843" y="49.0" />
+    </edge>
+    <edge source="StructuralPatterns.AltBridge.Sword" target="StructuralPatterns.AltBridge.Enchantment" relationship="DEPENDENCY">
+      <point x="-1.9753086422724664E-4" y="-72.0" />
+      <point x="464.364" y="305.0" />
+      <point x="423.5" y="305.0" />
+      <point x="11.445987654321016" y="49.0" />
+    </edge>
+    <edge source="StructuralPatterns.AltBridge.AltBridgeTest" target="StructuralPatterns.AltBridge.Hammer" relationship="CREATE">
+      <point x="74.5" y="0.0" />
+      <point x="693.864" y="565.5" />
+      <point x="14.99980246913583" y="72.0" />
+    </edge>
+    <edge source="StructuralPatterns.AltBridge.Hammer" target="StructuralPatterns.AltBridge.Enchantment" relationship="DEPENDENCY">
+      <point x="-1.9753086417040322E-4" y="-72.0" />
+      <point x="678.864" y="305.0" />
+      <point x="423.5" y="305.0" />
+      <point x="11.445987654321016" y="49.0" />
+    </edge>
+    <edge source="StructuralPatterns.AltBridge.Weapon" target="StructuralPatterns.AltBridge.Enchantment" relationship="DEPENDENCY">
+      <point x="4.814814815290447E-4" y="60.5" />
+      <point x="554.894" y="305.0" />
+      <point x="423.5" y="305.0" />
+      <point x="11.445987654321016" y="49.0" />
+    </edge>
+    <edge source="StructuralPatterns.AltBridge.Sword" target="StructuralPatterns.AltBridge.Enchantment" relationship="TO_ONE">
+      <point x="-1.9753086422724664E-4" y="72.0" />
+      <point x="464.364" y="498.0" />
+      <point x="793.364" y="498.0" />
+      <point x="793.364" y="49.0" />
+      <point x="75.99998765432099" y="0.0" />
+    </edge>
+    <edge source="StructuralPatterns.AltBridge.AltBridgeTest" target="StructuralPatterns.AltBridge.Sword" relationship="CREATE">
+      <point x="0.0" y="-38.5" />
+      <point x="-71.97067901234567" y="72.0" />
+    </edge>
+    <edge source="StructuralPatterns.AltBridge.Hammer" target="StructuralPatterns.AltBridge.Enchantment" relationship="TO_ONE">
+      <point x="-1.9753086417040322E-4" y="72.0" />
+      <point x="678.864" y="498.0" />
+      <point x="793.364" y="498.0" />
+      <point x="793.364" y="49.0" />
+      <point x="75.99998765432099" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="397.0" y="302.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
